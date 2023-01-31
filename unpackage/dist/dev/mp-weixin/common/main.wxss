@@ -1,0 +1,22 @@
+
+.whitedivide {/*白色分割线*/
+  height: 1px;
+  background-color: #FFFFFF;
+  width: 56px;
+  position:relative;
+  top: 0px;
+}
+.graydivide {/*灰色分割条*/
+  height: 10px;
+  background-color: #ededed;
+  position:relative;
+  top: 0px;
+}
+.blanke{
+height: 10px;
+display: flex;
+background-color: #ffffff;
+}
+
+/*每个页面公共css */
+

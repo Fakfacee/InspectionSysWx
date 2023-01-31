@@ -1,0 +1,65 @@
+
+.container{
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+}
+.title-box{
+	display: flex;
+	flex-direction: column;
+	height: 30vh;
+}
+.login-box{
+	padding-top: 5px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+.text_title{
+  text-align: center;
+  padding: 10px 10px;
+  color: black; 
+  font-size: 28px
+}
+.input-box{
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	margin: 0 20px;
+	background-color: #ededed;
+}
+.nameImage, .keyImage { 
+  margin: 10px 10px; 
+  width: 20px; 
+  height: 20px
+}
+.loginLab { 
+  margin: 10px 10px; 
+  color: #545454; 
+  font-size: 14px
+}
+.inputText { 
+  flex: block; 
+  float: right; 
+  text-align: left; 
+  margin: 10px 10px;
+  color: black; 
+  font-size: 14px
+}
+.button-box { 
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%; 
+  height: auto;
+  margin-top: 10px; 
+  margin-bottom: 20px; 
+  padding-bottom: 0px;
+}
+.buttonMain{
+  width: 60%; 
+  margin-top: 15px; 
+  background-color: #ededed;
+}
+
