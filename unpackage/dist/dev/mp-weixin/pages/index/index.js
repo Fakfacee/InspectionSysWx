@@ -132,9 +132,73 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Documents/HBuilderProjects/InspectionSysWx/pages/index/index.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js):\nSyntaxError: Unexpected token, expected \",\" (61:0)\n    at instantiate (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:67:32)\n    at constructor (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:364:12)\n    at TypeScriptParserMixin.raise (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:3365:19)\n    at TypeScriptParserMixin.unexpected (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:3398:16)\n    at TypeScriptParserMixin.expect (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:3761:28)\n    at TypeScriptParserMixin.parseObjectLike (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:11982:14)\n    at TypeScriptParserMixin.parseExprAtom (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:11464:23)\n    at TypeScriptParserMixin.parseExprSubscripts (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:11171:23)\n    at TypeScriptParserMixin.parseUpdate (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:11153:21)\n    at TypeScriptParserMixin.parseMaybeUnary (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:11127:23)\n    at TypeScriptParserMixin.parseMaybeUnary (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9590:20)\n    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:10956:61)\n    at TypeScriptParserMixin.parseExprOps (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:10962:23)\n    at TypeScriptParserMixin.parseMaybeConditional (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:10937:23)\n    at TypeScriptParserMixin.parseMaybeAssign (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:10895:21)\n    at TypeScriptParserMixin.parseMaybeAssign (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9529:20)\n    at C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:10863:39\n    at TypeScriptParserMixin.allowInAnd (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:12635:16)\n    at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:10863:17)\n    at TypeScriptParserMixin.parseExportDefaultExpression (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:14235:22)\n    at TypeScriptParserMixin.parseExportDefaultExpression (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9182:18)\n    at TypeScriptParserMixin.parseExport (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:14139:25)\n    at TypeScriptParserMixin.parseExport (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9164:20)\n    at TypeScriptParserMixin.parseStatementContent (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:13073:27)\n    at TypeScriptParserMixin.parseStatementContent (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9223:18)\n    at TypeScriptParserMixin.parseStatementLike (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:12952:17)\n    at TypeScriptParserMixin.parseModuleItem (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:12933:17)\n    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:13558:36)\n    at TypeScriptParserMixin.parseBlockBody (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:13550:10)\n    at TypeScriptParserMixin.parseProgram (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:12842:10)\n    at TypeScriptParserMixin.parseTopLevel (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:12832:25)\n    at TypeScriptParserMixin.parse (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:14740:10)\n    at TypeScriptParserMixin.parse (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9891:18)\n    at Object.parse (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:14782:38)\n    at Object.<anonymous> (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@dcloudio\\webpack-uni-mp-loader\\lib\\script-new.js:90:23)\n    at Object.<anonymous> (C:\\Users\\Administrator\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@dcloudio\\webpack-uni-mp-loader\\lib\\script.js:22:36)");
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  data: function data() {
+    return {
+      phonenumber: [],
+      password: []
+    };
+  },
+  onLoad: function onLoad() {},
+  methods: {
+    loginFun: function loginFun(e) {
+      uni.switchTab({
+        url: "/pages/main/main"
+      });
+      /*
+      uni.request({
+      	url: getApp().globalData.url,
+      	data:{
+      		strUser : this.phonenumber,
+      		strPwd : this.password
+      	},
+      	success: (res) => {
+      	        console.log(res.data);
+      	        this.text = 'request success';
+      	    }
+      }) */
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

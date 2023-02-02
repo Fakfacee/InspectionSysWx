@@ -6,8 +6,18 @@
 				
 			}
 		}
-	    ,{
-            "path" : "pages/home/home",
+	
+        ,{
+            "path" : "pages/main/main",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/main/user/user",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -16,6 +26,25 @@
             
         }
     ],
+	
+
+	"tabBar": {
+		"color": "#d4dbe3",
+		"selectedColor": "#000000",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list":[
+			{
+			"pagePath": "pages/main/main",
+			"text": "功能页面"	
+		},
+		{
+		"pagePath": "pages/main/user/user",
+		"text": "用户中心"	
+		}
+		]
+	},
+	
 	"globalStyle": {
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#F8F8F8"

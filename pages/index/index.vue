@@ -39,7 +39,11 @@
 
 		},
 		methods: {
-			loginFun(e){
+		loginFun(e){
+			uni.switchTab({
+				url:"/pages/main/main"
+			})
+				/*
 				uni.request({
 					url: getApp().globalData.url,
 					data:{
@@ -50,14 +54,13 @@
 					        console.log(res.data);
 					        this.text = 'request success';
 					    }
-				})
-				
-			},
-			regisFun(e){
-				
+				}) */
+			
+			
 			
 		}
 	}
+}
 </script>
 
 
