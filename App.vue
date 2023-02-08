@@ -43,7 +43,7 @@
 }
 
 .graydivide {/*灰色分割条*/
-  height: 10px;
+  height: 2px;
   background-color: #ededed;
   position:relative;
   top: 0px;
@@ -52,6 +52,22 @@
 height: 10px;
 display: flex;
 background-color: #ffffff;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	
+}
+.buttonMain{
+  width: 40%; 
+  margin-top: 15px; 
+  background-color: #ededed;
+}
+.textMain{
+	margin-top: 8px;
+	margin-left: 6px;
+	font-size: 20px;
 }
 
 	/*每个页面公共css */

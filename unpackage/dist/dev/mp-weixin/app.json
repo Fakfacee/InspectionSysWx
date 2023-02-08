@@ -2,7 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/main/main",
-    "pages/main/user/user"
+    "pages/main/user/user",
+    "pages/fitUp/fitUp",
+    "pages/weld/weld",
+    "pages/shaoma/shaoma"
   ],
   "subPackages": [],
   "window": {
@@ -10,8 +13,8 @@
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
-    "color": "#d4dbe3",
-    "selectedColor": "#000000",
+    "color": "#87CEEB",
+    "selectedColor": "#B22222",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [

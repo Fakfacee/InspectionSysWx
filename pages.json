@@ -25,22 +25,51 @@
             }
             
         }
+        ,{
+            "path" : "pages/fitUp/fitUp",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/weld/weld",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/shaoma/shaoma",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	
 
 	"tabBar": {
-		"color": "#d4dbe3",
-		"selectedColor": "#000000",
+		"color": "#87CEEB",
+		"selectedColor": "#B22222",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
+		//此处fontsize如何改变
 		"list":[
 			{
 			"pagePath": "pages/main/main",
-			"text": "功能页面"	
+			"text": "功能页面"
+			
 		},
 		{
-		"pagePath": "pages/main/user/user",
-		"text": "用户中心"	
+		    "pagePath": "pages/main/user/user",
+		    "text": "用户中心"	
 		}
 		]
 	},

@@ -1,0 +1,16 @@
+
+.uni-list-cell {
+	    height: 40px;
+	    display: flex;
+		margin-left: 8px;
+		flex-direction: row;
+	    align-items: center;
+		font-size: 18px;
+}
+.buttonMain{
+  width: 60%; 
+  margin-top: 15px; 
+  background-color: #ededed;
+}
+
+

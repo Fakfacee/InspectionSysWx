@@ -1,0 +1,34 @@
+
+.text{
+	margin-top: 8px;
+	margin-left: 6px;
+    font-size: 20px;
+}
+.button-box{
+	width: 100%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.blanke-box{
+   height: 80px;
+}
+.buttonMain{
+  width: 40%;
+  margin-top: 15px; 
+  background-color: #ededed;
+}
+.inputText {
+  border: 2px solid #ededed;
+  width: 60%;
+  height: 40px;
+  margin-left: 20%;
+  text-align: center; 
+  margin-top: 40px;
+  color: black; 
+  font-size: 14px
+} 
+
+
+
