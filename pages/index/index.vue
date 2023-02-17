@@ -39,26 +39,61 @@
 
 		},
 		methods: {
+		//登录函数
 		loginFun(e){
-			uni.switchTab({
-				url:"/pages/main/main"
-			})
-				/*
+			if(this.phonenumber.length ==0 || this.password.length == 0){ 
+			    uni.showToast({   
+			        title: '用户名和密码不能为空',   
+			        icon: 'none',   
+			        duration: 2000   
+			    })   
+			}else{
 				uni.request({
-					url: getApp().globalData.url,
+					url: getApp().globalData.url+'login',
+					method : 'POST',
+					dataType : 'JSON',
+					
 					data:{
 						strUser : this.phonenumber,
 						strPwd : this.password
 					},
 					success: (res) => {
-					        console.log(res.data);
-					        this.text = 'request success';
-					    }
-				}) */
+					    var result = JSON.parse(res.data);
+					    if(result.Status =='0'){
+					    uni.showToast({
+					
+					      title: '用户名不存在,请进行注册',   
+					      icon: 'loading',   
+					      duration: 2000   
+					      })   
+					    }else if(result.Status =='1'){
+							//用户名
+							getApp().globalData.userName = result.Name,
+							//承包商
+							getApp().globalData.subcontractor = result.Contractor,
+							//身份类别():0：管理员，1：车间管理人员，2：QC,3:焊工 class_code
+							getApp().globalData.classCode = result.PowerId,
+							//身份名:administrator,shopManage,QC,welder
+							getApp().globalData.className,
+							
+							uni.switchTab({
+								url:'/pages/main/main'
+							    })
+						}
+					}
+				
+				
+				})
+			}
 			
-			
+		},
+		regisFun(){
+			uni.navigateTo({
+				url:'/pages/register/register'
+			})
 			
 		}
+	 
 	}
 }
 </script>

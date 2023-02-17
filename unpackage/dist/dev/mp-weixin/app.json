@@ -5,7 +5,8 @@
     "pages/main/user/user",
     "pages/fitUp/fitUp",
     "pages/weld/weld",
-    "pages/shaoma/shaoma"
+    "pages/shaoma/shaoma",
+    "pages/register/register"
   ],
   "subPackages": [],
   "window": {

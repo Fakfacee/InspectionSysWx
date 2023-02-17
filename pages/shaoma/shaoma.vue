@@ -18,33 +18,39 @@
 	export default {
 		data() {
 			return {
-				spool: "",
+				spool: [],
 				activityType:[],
 			}
 		},
+	
 		methods: {
+		
+			
 			get_text: function(e){
-			    this.spool = e.data.activityType
+			    this.activityType = e.data.activityType
 			  },
 			scanCodeEvent: function(e){
+				//h5端无法调用,小程序端调用需先配置APPID
 				uni.scanCode({
-					success: function (res) {
+					success:(res) => {
+						//console.log('条码类型：' + res.scanType);QR_CODE
+						//console.log('条码内容：' + res.result);2-DO-35663-A0CA3Z-01
 						this.spool = res.result;
-						console.log('条码类型：' + res.scanType);
-						console.log('条码内容：' + res.result);
+
 					}
 				})
 			},
 			submit:function(e){
 				uni.request({
-					url:getApp().globalData.url,
+					url:getApp().globalData.url+'searchaspool',
 					method:"POST",
 					dataType:"JSON",
 					data:{value :'0',spool:this.spool},
 					success:(res) =>{
 						var result = JSON.parse(res.data)
-						console.log(result.Status)
-						console.log(result)
+						
+						//console.log(result.Status)
+					//1访问成功，0访问失败
 					if (result.Status =='0') {
 					
 						uni.showToast({   
@@ -54,29 +60,30 @@
 						      }) 
 				
 					}else if(result.Status =='1'){
+						getApp().globalData.spool = this.spool;
  	
 					    if(this.activityType == 'inspectFitUp'){
 					        uni.navigateTo({
-								url:'/pages/inspectFitUp/inspectFitUp?activityType = inspectFitUp',
-					         });
+								url:'/pages/inspectFitUp/inspectFitUp'
+					         })
 					      }else if(this.activityType == 'inspectVisual'){
-					        wx.navigateTo({
+					        uni.navigateTo({
 					
-					          url: '/pages/inspectVisual/inspectVisual?activityType = inspectVisual' ,
+					          url: '/pages/inspectVisual/inspectVisual' 
 					      
-					          });
+					          })
 					      }else if(this.activityType == 'fitUp'){
-					        wx.navigateTo({
+					        uni.navigateTo({
 					
-					          url: '/pages/fitUp/fitUp?activityType = fitUp',
+					          url: '/pages/fitUp/fitUp'
 					      
-					          });
+					          })
 					      }else if(this.activityType == 'weld'){
-					        wx.navigateTo({
+					        uni.navigateTo({
 					
-					          url: '/pages/weld/weld?activityType = weld',
+					          url: '/pages/weld/weld'
 					      
-					          }); 
+					          })
 					      }
 						
 						
@@ -91,8 +98,8 @@
 			},
 			
 		},
-		onLoad:function(option){
-			this.activityType = option.activityType
+		onLoad() {
+	    this.activityType = getApp().globalData.activityType
 			
 		}
 	}

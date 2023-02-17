@@ -111,10 +111,14 @@ var _default = {
     passWord: [],
     //权限
     userClassCode: [],
+    //当前检验类型,当类型为[],getApp().globalData.activityType[0] = f 输出为第一个字符 
+    activityType: [],
+    //单管号
+    spool: ['2-DO-35663-A0CA3Z-01'],
     //上线测试
     //url : ['http://1.116.137.136:8080/'],
     //本地测试
-    url: ['http://127.0.0.1:8080/']
+    url: ['http://127.0.0.1:5000/']
   },
   onLaunch: function onLaunch() {
     console.log('App Launch');

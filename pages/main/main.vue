@@ -7,13 +7,13 @@
 	    <view class = "main_text-logo">
 	    <image class ="icon-picture-logo" src="../image/CFHI_logo.png"></image>
 	    </view>
-	    <view v-show="class_code === 2">
+	    <view v-show="classCode === 2">
 			<view class = "textMain">请选择当前检验内容</view>
 		</view>
-		<view v-show="class_code === 3">
+		<view v-show="classCode === 3">
 		    <view class = "textMain">请选择当前报检内容</view>
 		</view>
-		<view v-show="class_code === 0">
+		<view v-show="classCode === 0">
 		    <view class = "textMain">请选择所需功能</view>
 		</view>
 	</view>
@@ -22,7 +22,7 @@
 	<!--间隔灰横条-->
 	<view class="graydivide"></view>
 	<view class='func-box'>
-	<view v-if=" class_code === 2 || class_code === 0">
+	<view v-if=" classCode === 2 || classCode === 0">
 	
 		<view class="func-column" @click="jump2inspectFitUp"><!--左边图片&文字-->
 	    <image class="icon-picture" src="../image/logo.png"></image>
@@ -39,7 +39,7 @@
 	</view>
 	<view class="graydivide"></view>
 
-	<view v-if="class_code === 3 || class_code === 0">
+	<view v-if="classCode === 3 || classCode === 0">
 		<view class="func-column" @click="jump2fitup"><!--左边图片&文字-->
 		<image class="icon-picture" src="../image/logo.png"></image>
 		
@@ -65,31 +65,41 @@
 	export default {
 		data() {
 			return {
-				class_code : 0,
+				classCode : 0,
 			}
+		},
+		onLoad(){
+			this.classCode = getApp().globalData.classCode
+			
+			
 		},
 		methods: {
 			jump2inspectFitUp(){
+				getApp().globalData.activityType = 'inspectFitUp'
 				uni.navigateTo({
-					url:'/pages/shaoma/shaoma?activityType = inspectFitUp'
+					
+					url:'/pages/inspectFitUp/inspectFitUp'
 				})
 				
 			},
 			jump2inspectVisual(){
+				getApp().globalData.activityType = 'inspctVisual'
 				uni.navigateTo({
-					url:'/pages/shaoma/shaoma?activityType = inspctVisual'
+					url:'/pages/shaoma/shaoma'
 				})
 				
 			},
 			jump2fitup(){
+				getApp().globalData.activityType = 'fitUp'
 				uni.navigateTo({
-					url:'/pages/shaoma/shaoma?activityType = fitUp'
+					url:'/pages/shaoma/shaoma'
 				})
 				
 			},
 			jump2weld(){
+				getApp().globalData.activityType = 'weld'
 				uni.navigateTo({
-					url:'/pages/shaoma/shaoma?activityType = weld'
+					url:'/pages/shaoma/shaoma'
 				})
 				
 			}

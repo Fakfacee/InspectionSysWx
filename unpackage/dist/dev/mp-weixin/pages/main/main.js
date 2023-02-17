@@ -207,28 +207,35 @@ exports.default = void 0;
 var _default = {
   data: function data() {
     return {
-      class_code: 0
+      classCode: 0
     };
+  },
+  onLoad: function onLoad() {
+    this.classCode = getApp().globalData.classCode;
   },
   methods: {
     jump2inspectFitUp: function jump2inspectFitUp() {
+      getApp().globalData.activityType = 'inspectFitUp';
       uni.navigateTo({
-        url: '/pages/shaoma/shaoma?activityType = inspectFitUp'
+        url: '/pages/inspectFitUp/inspectFitUp'
       });
     },
     jump2inspectVisual: function jump2inspectVisual() {
+      getApp().globalData.activityType = 'inspctVisual';
       uni.navigateTo({
-        url: '/pages/shaoma/shaoma?activityType = inspctVisual'
+        url: '/pages/shaoma/shaoma'
       });
     },
     jump2fitup: function jump2fitup() {
+      getApp().globalData.activityType = 'fitUp';
       uni.navigateTo({
-        url: '/pages/shaoma/shaoma?activityType = fitUp'
+        url: '/pages/shaoma/shaoma'
       });
     },
     jump2weld: function jump2weld() {
+      getApp().globalData.activityType = 'weld';
       uni.navigateTo({
-        url: '/pages/shaoma/shaoma?activityType = weld'
+        url: '/pages/shaoma/shaoma'
       });
     }
   }
